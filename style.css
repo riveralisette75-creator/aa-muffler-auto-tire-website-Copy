@@ -68,3 +68,46 @@ h3{font-size:24px;margin-bottom:9px}
 .site-footer .social-links a{width:32px;height:32px}
 @media(max-width:850px){.site-header .social-links{margin-left:auto}}
 @media(max-width:520px){.site-header .social-links{order:2}.header-phone{order:2}.site-header .social-links a{width:30px;height:30px}}
+
+
+.work-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.work-card {
+  margin: 0;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+.work-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.work-card figcaption {
+  padding: 14px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .work-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 450px) {
+  .work-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
